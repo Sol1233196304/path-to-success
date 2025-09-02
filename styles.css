@@ -1,0 +1,281 @@
+/* CSS BY Dasol Kim */
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ROOT VARIABLES */
+:root{
+    --Teal: #4CA7C0;
+    --Purple:#484FB7;
+    --Lavender: #6B8FE7;
+    --Yellow:#E9BB57;
+    --Pink: #D9526F;
+    --Dark_gray: #1E1E1E;
+    --White: #ffffff;
+}
+/* GLOBAL STYLES (mobile first/small) */
+*{
+	font-family: "Inter", sans-serif;    
+    font-size: 1em;
+	box-sizing: border-box;
+
+}
+
+body {
+    margin: auto;
+    background-color: var(--Lavender);
+    color: var(--Dark_gray);
+    font-family: "Inter";
+    max-width: 450px;
+}
+header{
+    padding: 2rem 0;
+    max-width: 450px;
+    color: var(--White);
+    background-color: var(--Purple);
+    text-align: center;
+    font-style: italic;
+}
+
+main, footer{ 
+    font-family:"Inter";
+    background-color: var(--Purple);
+    color: var(--White);
+}
+
+h1 {
+    font: 3em "Kavoon";
+}
+h2 {
+    font: 2em "Kavoon";
+    padding: 0 0.5em;    
+}
+h3{
+    font: 1.5em "Inter";
+    color: var(--Yellow);
+    padding: 0 1em;
+    font-weight: bold;
+}
+h4{
+    padding: 0.5em;
+    font: 1.15em "Inter";
+    color: var(--Purple);
+    font-weight: bold;
+}
+
+header p {
+    margin: 1rem 0 3rem 0;
+}
+
+#nav {
+    padding: 1em;
+    background-color: var(--Yellow);
+	text-decoration: none;    
+    text-transform: uppercase;    
+}
+
+#nav h2{
+    font-family: "Inter";
+    color: var(--Dark_gray);
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+#nav a{
+	text-decoration: none;    
+    color: var(--Purple)    
+}
+#nav li{
+    background-color: var(--White);
+    margin: 0.5em;
+    padding: 0.75em 0;
+    color: var(--Purple);
+    font: 1.15em "Inter" ;
+    font-weight: bold;
+    
+}
+
+img {
+    padding:0.5em;
+}
+
+#services section section{
+    background-color: var(--White);
+    padding: 1em;
+    margin: 1em;
+    gap:1em;
+    border-radius: 1em;
+}
+
+#services p{
+    line-height: 1.5;    
+    font-family: "Inter";
+    color: var(--Dark_gray);
+    padding: 0.5em;
+}
+
+#choose_us, #first_step{
+    background-color: var(--Pink);
+    padding:1em 0;
+}
+
+
+
+#flex{
+
+    margin: 0 0.7rem;
+    display: flex;
+    border-radius: 0.5em;
+    color: var(--Dark_gray);
+    font-weight: bold;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content:space-evenly; 
+	padding-top: 1rem;
+}
+#flex div{
+	padding: 1rem 1rem;
+	width: 170px;
+	height: 80px;
+	border-radius: 1em;
+	text-align: center;
+	display:flex; 
+	justify-content:center;
+	align-items: center; }
+
+#choose_us #choose_us1{
+    background-color: var(--Teal);
+}
+#choose_us #choose_us2{
+    background-color: var(--Lavender);
+}
+#choose_us #choose_us3{
+    background-color: var(--Yellow);
+}
+#choose_us #choose_us4{
+    background-color: var(--White);
+}
+table {  
+    table-layout: fixed;
+
+    margin: auto;
+    color: var(--Dark_gray);
+    background-color: var(--White);
+}
+thead {
+    border: 3px solid var(--Yellow);
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--Yellow);
+    text-transform: uppercase;    
+}
+
+th, td{
+    border: 3px solid var(--Yellow);
+    padding: 1.2em;
+}
+
+#pricing{
+    padding:0.5em 0;
+}
+#pricing h3{
+    padding: 0.3em 0.5em;
+}
+
+#first_step{
+    padding: 0.5em 0;
+}
+#first_step p{
+    font-size: 1em;
+    line-height: 1.5;    
+    font-family: "Inter";
+    padding: 0 1em;
+}
+
+#first_step a{
+    background-color: var(--White);
+    font-weight: bold;
+    border-radius: 0.8em;
+    text-transform: uppercase;
+    color: var(--Dark_gray);
+    text-align: center;
+    padding: 1em 1em;
+    align-items: center;
+    display: block;
+    margin: 0.5em 1.3em;
+    box-shadow: 3px 3px 5px 0px;    
+}
+
+
+#first_step a:hover{
+    box-shadow: 6px 6px 5px 0px;    
+}
+
+footer{
+    padding: 1em;
+    display: flex;
+    color: var(--White);
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content:space-evenly;
+}
+
+footer section{
+	padding: 1rem;
+	height: 80px;
+	text-align: center;
+	display:flex; 
+	justify-content:center;
+	align-items: center; 
+}
+
+footer a{
+    color: var(--White);
+}
